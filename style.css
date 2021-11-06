@@ -1,0 +1,152 @@
+@font-face{
+	font-family: Red_Had;
+	src: url("./fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf");
+}
+@font-face{
+	font-family: Red_Had_Bold;
+	src: url("./fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf");
+	font-weight: 900;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Red_Had;
+	color: hsl(224, 23%, 55%);
+	
+}
+
+html{
+	height: 100%;
+}
+span{
+	font-family: "Red_Had_Bold";
+	color: hsl(223, 47%, 23%);
+}
+
+.All{
+	background-image: url("./images/pattern-background-desktop.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: hsl(225, 100%, 94%);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 100%;
+}
+
+.Card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	overflow: hidden;
+	width: 350px;
+	background-color: white;
+	border-radius: 1em;
+	margin: 0em 1.5em 0em 1.5em;
+
+	text-align: center;
+	box-shadow: 0em 1em 1.5em rgba(200,200,200,0.9);
+}
+
+.Card img{
+	width: 100%;
+}
+
+.Text_Area{
+	margin: 1em;
+	margin-bottom: 0.3em;
+	padding: 1em;
+}
+
+.Text_Area p{
+	margin-top: 1rem;
+}
+
+
+.Song_Area{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	width: 80%;
+
+	background-color: hsl(225, 100%, 98%);
+	border-radius: 0.3em;
+	padding: 1em;
+	margin: 0em 0em 1em 0em;
+}
+
+.Song_Area img{
+	width: 45px;
+}
+
+.Song_Area a{
+	font-family: "Red_Had_Bold";
+	color: hsl(245, 75%, 52%);
+	flex: 1;
+}
+.Song_Area a:hover{
+	color: hsl(224, 23%, 55%);
+	text-decoration: none;
+}
+
+.Price{
+	text-align: left;
+	margin: 0em 1em 0em 0.8em;
+	flex: 1 1 20%;
+}
+
+.Button{
+	margin: 1em;
+	padding: 0.8em;
+	width: 80%;
+
+	font-family: "Red_Had_Bold";
+	background-color: hsl(245, 75%, 52%);
+	border: 0;
+	border-radius: 0.5em;
+	color: white;
+	box-shadow: 0em 1em 1.5em rgba(200,200,200,0.9);
+}
+
+.Button:hover{
+	background-color: hsl(224, 60%, 55%);
+}
+
+.Cancel{
+	margin: 0em 0em 1.5em 0em;
+	font-family: "Red_Had_Bold";
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+.Cancel:hover{
+	color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 360px){
+	.All{
+		background-image: url("./images/pattern-background-mobile.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: hsl(225, 100%, 94%);
+	}
+	p{
+		font-size: 15px;
+	}
+	a{
+		font-size: 15px;
+	}
+}
+
+.Credict{
+	text-align: center;
+	position: absolute;
+	bottom: 0%;
+}
