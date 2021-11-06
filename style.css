@@ -146,7 +146,7 @@ span{
 }
 
 .Credict{
-	text-align: center;
+	text-align: right;
 	position: absolute;
-	bottom: 0%;
+	top: 0%;
 }
